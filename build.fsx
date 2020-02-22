@@ -1,6 +1,6 @@
 #r "paket:
 nuget Fake.DotNet.Cli
-nuget Fake.DotNet.Paket
+nuget Fake.DotNet
 nuget Fake.IO.FileSystem
 nuget Fake.Core.Target //"
 
@@ -12,14 +12,9 @@ open Fake.DotNet
 open Fake.IO
 open Fake.IO.FileSystemOperators
 open Fake.IO.Globbing.Operators
-open Fake.Paket
 open System.IO
 
 Target.initEnvironment ()
-
-Target.create "Restore" (fun _ ->
-    Paket.Restore
-)
 
 Target.create "Clean" (fun _ ->
     !! "src/**/bin"
@@ -35,7 +30,6 @@ Target.create "Build" (fun _ ->
 Target.create "All" ignore
 
 "Clean"
-  ==> "Restore"
   ==> "Build"
   ==> "All"
 
