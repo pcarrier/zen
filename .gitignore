@@ -1,0 +1,19 @@
+/.fake/
+**/packages/*
+
+/.idea/
+*.sln.iml
+
+/.vs/
+/.vscode/
+.ionide/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
