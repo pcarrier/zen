@@ -1,0 +1,4 @@
+image: Visual Studio 2019
+clone_depth: 2
+build_script:
+- .\build.cmd
