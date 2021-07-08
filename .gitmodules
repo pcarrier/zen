@@ -1,0 +1,6 @@
+[submodule "incbin"]
+	path = incbin
+	url = https://github.com/graphitemaster/incbin
+[submodule "lib/incbin"]
+	path = lib/incbin
+	url = https://github.com/graphitemaster/incbin

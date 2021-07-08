@@ -1,0 +1,6 @@
+#!/bin/sh
+set -xeuo pipefail
+mkdir -p "$ZEN/build/debug"
+cd       "$ZEN/build/debug"
+cmake -GNinja ../..
+ninja

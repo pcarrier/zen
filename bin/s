@@ -1,0 +1,3 @@
+#!/bin/sh
+set -xeuo pipefail
+exec subl -n "$ZEN"

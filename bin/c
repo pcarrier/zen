@@ -1,0 +1,5 @@
+#!/bin/sh
+set -xeuo pipefail
+if [ -e "$ZEN/build" ]; then
+	rm -r "$ZEN/build"
+fi
