@@ -1,0 +1,6 @@
+#!/bin/sh
+set -xeuo pipefail
+mkdir -p "$ZEN/build/release"
+cd       "$ZEN/build/release"
+cmake -GNinja ../.. -D CMAKE_BUILD_TYPE=Release
+ninja

@@ -8,7 +8,7 @@ It is what it is. What else do you need?
 
 - Install dependencies:
 ```
-$ brew install direnv cmake ninja sdl2 sdl2_ttf
+$ brew install direnv cmake ninja doxygen
 ```
 - [Hook `direnv` into your shell](https://direnv.net/docs/hook.html)
 - `direnv allow` from the root of the repository
